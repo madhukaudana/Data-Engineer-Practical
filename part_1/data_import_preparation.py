@@ -114,5 +114,6 @@ def run_etl():
         dtype_map={'order_id': BigInteger(), 'customer_id': BigInteger(), 'total_amount': Float(), 'order_date': Date()}
     )
 
+
 if __name__ == "__main__":
     run_etl()
