@@ -92,6 +92,23 @@ Dashboard Components:
 # Step 4: Machine Learning Model
 
 The machine learning model predicts repeat customers based on order count and revenue.
+
+Create table for the pre-processed data:
+
+```sql
+    USE delivery;
+    
+    CREATE TABLE customer_data (
+    id BIGINT,
+    total_orders INT,
+    total_revenue FLOAT,
+    repeat_customer TINYINT,
+    customer_id BIGINT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)	
+);
+```
+
 Run following command to data preparation for train the model:
 
 ```bash
