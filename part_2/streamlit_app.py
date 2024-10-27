@@ -1,6 +1,6 @@
 import pandas as pd
 import streamlit as st
-from dashboard import DelivergateDashboard
+from dashboard import StreamlitDashboard
 
 # Database credentials
 DB_USER = 'root'
@@ -9,7 +9,7 @@ DB_HOST = 'localhost'
 DB_PORT = '3306'
 DB_NAME = 'delivery'
 
-dashboard = DelivergateDashboard(DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME)
+dashboard = StreamlitDashboard(DB_USER, DB_PASSWORD, DB_HOST, DB_PORT, DB_NAME)
 
 connection = dashboard.connect_to_db()
 

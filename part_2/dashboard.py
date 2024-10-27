@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 
 
-class DelivergateDashboard:
+class StreamlitDashboard:
     def __init__(self, db_user, db_password, db_host, db_port, db_name):
         self.db_url = f"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
         self.connection = None
