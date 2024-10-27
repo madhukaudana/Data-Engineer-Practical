@@ -33,7 +33,7 @@ This repository contains the code for the assignment of the Data Engineer positi
 
 1. Clone the repository:
     ```bash
-    git clone
+    git clone https://github.com/madhukaudana/Data-Engineer-Practical.git
     ```
    
 2. Create a MySQL database:
